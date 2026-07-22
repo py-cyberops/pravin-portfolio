@@ -1,0 +1,44 @@
+.button {
+
+    padding:12px 28px;
+
+    border-radius:var(--radius-sm);
+
+    border:none;
+
+    cursor:pointer;
+
+    font-family:var(--font-body);
+
+    font-size:16px;
+
+    transition:0.3s ease;
+
+}
+
+
+.button-primary {
+
+    background:var(--color-cyan);
+
+    color:var(--color-ink);
+
+}
+
+
+.button-secondary {
+
+    background:transparent;
+
+    color:var(--color-paper);
+
+    border:1px solid var(--color-slate);
+
+}
+
+
+.button:hover {
+
+    transform:translateY(-3px);
+
+}
