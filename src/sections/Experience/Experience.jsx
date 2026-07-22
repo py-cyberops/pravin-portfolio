@@ -32,8 +32,8 @@ const Experience = () => {
                 whileInView="visible"
 
                 viewport={{
-                    once:true,
-                    amount:0.2
+                    once: true,
+                    amount: 0.2
                 }}
 
             >
@@ -54,13 +54,9 @@ const Experience = () => {
 
 
                 <motion.h2
-
                     variants={itemVariants}
-
                 >
-
-                    Building through learning and shipping.
-
+                    Engineering journey and growth.
                 </motion.h2>
 
 
@@ -73,8 +69,9 @@ const Experience = () => {
 
                 >
 
-                    A timeline of projects, learning,
-                    and continuous engineering growth.
+                    A timeline of technical exploration,
+                    projects, certifications, and building
+                    secure software systems.
 
                 </motion.p>
 
@@ -83,7 +80,7 @@ const Experience = () => {
                 <div className="timeline">
 
 
-                    {experience.map((item)=>(
+                    {experience.map((item) => (
 
 
                         <TimelineItem

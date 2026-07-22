@@ -7,7 +7,7 @@ import {
 import "./CertificationCard.css";
 
 
-const CertificationCard = ({certificate}) => {
+const CertificationCard = ({ certificate }) => {
 
 
     return (
@@ -20,11 +20,14 @@ const CertificationCard = ({certificate}) => {
 
         >
 
+
             <div className="certificate-number">
 
                 {certificate.id}
 
             </div>
+
+
 
 
             <div className="certificate-content">
@@ -38,6 +41,7 @@ const CertificationCard = ({certificate}) => {
 
 
 
+
                 <h3>
 
                     {certificate.title}
@@ -46,7 +50,8 @@ const CertificationCard = ({certificate}) => {
 
 
 
-                <p>
+
+                <p className="certificate-issuer">
 
                     {certificate.issuer}
 
@@ -54,11 +59,27 @@ const CertificationCard = ({certificate}) => {
 
 
 
-                <span className="certificate-year">
 
-                    {certificate.year}
+                <div className="certificate-meta">
 
-                </span>
+
+                    <span className="certificate-year">
+
+                        {certificate.year}
+
+                    </span>
+
+
+
+                    <span className="certificate-type">
+
+                        PDF Credential
+
+                    </span>
+
+
+                </div>
+
 
 
 

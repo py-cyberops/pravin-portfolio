@@ -9,7 +9,7 @@ const projects = [
             "Secure Software Engineering Platform",
 
         description:
-            "A platform focused on building, securing, and scaling modern digital systems through software engineering and security practices.",
+            "A security-focused software engineering platform exploring modern web development, cloud infrastructure, and secure system design.",
 
 
         technologies: [
@@ -34,13 +34,13 @@ const projects = [
         id: "02",
 
         title:
-            "Pravin Portfolio",
+            "Nivaronix Portfolio System",
 
         subtitle:
             "Personal Engineering Platform",
 
         description:
-            "A modern developer portfolio designed with reusable architecture, motion systems, and a premium engineering-focused interface.",
+            "A production-style developer portfolio built with reusable React architecture, component systems, animations, and responsive design principles.",
 
 
         technologies:[
@@ -57,6 +57,37 @@ const projects = [
 
         category:
             "Frontend Engineering"
+
+    },
+
+
+    {
+        id: "03",
+
+        title:
+            "ZTCloud Sentinel",
+
+        subtitle:
+            "Zero Trust Cloud Security Platform",
+
+        description:
+            "A security platform concept focused on cloud monitoring, access control, automation, and secure infrastructure management for modern applications.",
+
+
+        technologies:[
+            "FastAPI",
+            "PostgreSQL",
+            "Cloud",
+            "Cybersecurity"
+        ],
+
+
+        status:
+            "Architecture Phase",
+
+
+        category:
+            "Security Engineering"
 
     }
 

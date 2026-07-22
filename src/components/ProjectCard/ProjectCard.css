@@ -1,37 +1,45 @@
 .project-card {
 
+    padding:32px;
+
     background:
-    var(--color-ink-soft);
+
+    rgba(255,255,255,0.03);
+
 
     border:
-    1px solid rgba(137,146,166,0.2);
 
-    border-radius:
-    var(--radius-lg);
+    1px solid rgba(255,255,255,0.08);
 
-    padding:
-    32px;
 
-    transition:
-    transform 0.3s ease,
-    border-color 0.3s ease;
+    border-radius:16px;
+
+
+    transition:0.3s ease;
+
 
 }
+
 
 
 .project-card:hover {
 
-    transform:
-    translateY(-6px);
+    transform:translateY(-8px);
+
 
     border-color:
-    var(--color-cyan);
+
+    rgba(0,212,255,0.4);
+
 
 }
 
 
 
+
+
 .project-header {
+
 
     display:flex;
 
@@ -39,7 +47,9 @@
 
     align-items:center;
 
-    margin-bottom:24px;
+
+    margin-bottom:25px;
+
 
 }
 
@@ -47,11 +57,13 @@
 
 .project-number {
 
-    font-family:
-    var(--font-mono);
 
-    color:
-    var(--color-cyan);
+    font-family:var(--font-display);
+
+    font-size:14px;
+
+    color:var(--color-cyan);
+
 
 }
 
@@ -59,99 +71,141 @@
 
 .project-category {
 
-    font-size:12px;
 
-    color:
-    var(--color-slate);
+    font-size:13px;
 
-    font-family:
-    var(--font-mono);
+    color:var(--color-slate);
+
 
 }
+
+
 
 
 
 .project-card h3 {
 
-    font-family:
-    var(--font-display);
+
+    font-family:var(--font-display);
 
     font-size:28px;
 
     margin-bottom:8px;
 
+    color:var(--color-paper);
+
+
 }
+
+
 
 
 
 .project-card h4 {
 
-    color:
-    var(--color-cyan);
 
     font-size:16px;
 
-    font-weight:400;
+    font-weight:500;
+
+    color:var(--color-cyan);
+
+    margin-bottom:20px;
+
 
 }
+
+
 
 
 
 .project-card p {
 
-    color:
-    var(--color-slate);
+
+    color:var(--color-slate);
 
     line-height:1.7;
 
-    margin:20px 0;
+    margin-bottom:25px;
+
 
 }
+
+
 
 
 
 .project-tech {
 
+
     display:flex;
 
     flex-wrap:wrap;
 
-    gap:8px;
+    gap:10px;
+
+
+    margin-bottom:25px;
+
 
 }
+
+
 
 
 
 .project-tech span {
 
-    padding:
-    6px 12px;
 
-    border:
-    1px solid rgba(137,146,166,0.25);
+    padding:6px 12px;
 
-    border-radius:
-    999px;
+
+    border-radius:20px;
+
 
     font-size:13px;
 
-    font-family:
-    var(--font-mono);
+
+    background:
+
+    rgba(0,212,255,0.08);
+
+
+    color:var(--color-cyan);
+
 
 }
 
 
 
+
+
 .project-status {
 
-    margin-top:24px;
 
-    color:
-    var(--color-success);
+    display:flex;
 
-    font-family:
-    var(--font-mono);
+    align-items:center;
+
 
     font-size:14px;
+
+
+    color:var(--color-paper);
+
+
+}
+
+
+
+
+
+.status-dot {
+
+
+    color:var(--color-success);
+
+    margin-right:8px;
+
 
 }

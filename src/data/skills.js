@@ -3,13 +3,14 @@ const skills = [
     {
         id:"01",
 
-        title:"Frontend Systems",
+        title:"Frontend Engineering",
 
         skills:[
             "React",
             "JavaScript",
             "TypeScript",
-            "CSS Architecture"
+            "HTML & CSS",
+            "Responsive Design"
         ]
 
     },
@@ -18,13 +19,14 @@ const skills = [
     {
         id:"02",
 
-        title:"Backend Systems",
+        title:"Backend Engineering",
 
         skills:[
             "Node.js",
             "FastAPI",
             "REST APIs",
-            "Databases"
+            "Databases",
+            "System Design"
         ]
 
     },
@@ -39,7 +41,8 @@ const skills = [
             "Linux",
             "Docker",
             "Terraform",
-            "Cloud Platforms"
+            "Cloud Platforms",
+            "Infrastructure as Code"
         ]
 
     },
@@ -51,8 +54,9 @@ const skills = [
         title:"Security Engineering",
 
         skills:[
-            "Web Security",
+            "Networking",
             "OWASP",
+            "Web Security",
             "Security Testing",
             "Secure Development"
         ]

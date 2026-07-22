@@ -20,11 +20,14 @@ const SkillGroup = ({group}) => {
 
         >
 
+
             <span className="skill-number">
 
                 {group.id}
 
             </span>
+
+
 
 
             <h3>
@@ -34,19 +37,32 @@ const SkillGroup = ({group}) => {
             </h3>
 
 
-            <ul>
 
-                {group.skills.map((skill)=>(
 
-                    <li key={skill}>
+            <div className="skill-list">
 
-                        {skill}
 
-                    </li>
+                {
+                    group.skills.map((skill)=>(
 
-                ))}
+                        <span
 
-            </ul>
+                            key={skill}
+
+                            className="skill-item"
+
+                        >
+
+                            {skill}
+
+                        </span>
+
+                    ))
+                }
+
+
+            </div>
+
 
 
         </motion.article>

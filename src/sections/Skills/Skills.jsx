@@ -32,8 +32,8 @@ const Skills = () => {
                 whileInView="visible"
 
                 viewport={{
-                    once:true,
-                    amount:0.2
+                    once: true,
+                    amount: 0.2
                 }}
 
             >
@@ -59,7 +59,7 @@ const Skills = () => {
 
                 >
 
-                    Tools and technologies I build with.
+                    Technologies behind my engineering workflow.
 
                 </motion.h2>
 
@@ -73,9 +73,9 @@ const Skills = () => {
 
                 >
 
-                    A security-focused technology stack
-                    used to build modern, scalable software systems.
-
+                    A growing engineering stack focused on
+                    full-stack development, cloud infrastructure,
+                    and secure software practices.
                 </motion.p>
 
 
@@ -83,7 +83,7 @@ const Skills = () => {
                 <div className="skills-grid">
 
 
-                    {skills.map((group)=>(
+                    {skills.map((group) => (
 
 
                         <SkillGroup

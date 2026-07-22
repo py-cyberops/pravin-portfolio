@@ -35,7 +35,7 @@ const Navbar = () => {
             },
 
             {
-                threshold:0.3,
+                threshold: 0.3,
             }
 
         );
@@ -103,6 +103,7 @@ const Navbar = () => {
             >
 
                 {
+
                     navLinks.map((link)=>(
 
                         <li key={link.name}>
@@ -112,9 +113,13 @@ const Navbar = () => {
                                 href={link.path}
 
                                 className={
+
                                     activeSection === link.path.substring(1)
-                                    ? "active"
+
+                                    ? "navbar-active"
+
                                     : ""
+
                                 }
 
                                 onClick={() => setMenuOpen(false)}
@@ -128,6 +133,7 @@ const Navbar = () => {
                         </li>
 
                     ))
+
                 }
 
             </ul>

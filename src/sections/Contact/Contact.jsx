@@ -48,6 +48,7 @@ const Contact = () => {
 
 
 
+
                 <motion.h2
 
                     variants={itemVariants}
@@ -57,6 +58,7 @@ const Contact = () => {
                     Let's build something meaningful.
 
                 </motion.h2>
+
 
 
 
@@ -76,6 +78,7 @@ const Contact = () => {
 
 
 
+
                 <motion.div
 
                     className="contact-links"
@@ -89,11 +92,18 @@ const Contact = () => {
 
                         href="mailto:pypravin.cyberops@gmail.com"
 
+                        className="contact-card"
+
                     >
 
-                        Email
+                        <span>
+                            EMAIL
+                        </span>
+
+                        pypravin.cyberops@gmail.com
 
                     </a>
+
 
 
 
@@ -105,11 +115,18 @@ const Contact = () => {
 
                         rel="noopener noreferrer"
 
+                        className="contact-card"
+
                     >
 
-                        GitHub
+                        <span>
+                            GITHUB
+                        </span>
+
+                        github.com/py-cyberops
 
                     </a>
+
 
 
 
@@ -121,9 +138,15 @@ const Contact = () => {
 
                         rel="noopener noreferrer"
 
+                        className="contact-card"
+
                     >
 
-                        LinkedIn
+                        <span>
+                            LINKEDIN
+                        </span>
+
+                        linkedin.com/in/pravingyawali
 
                     </a>
 

@@ -7,7 +7,7 @@ import {
 import "./TimelineItem.css";
 
 
-const TimelineItem = ({item}) => {
+const TimelineItem = ({ item }) => {
 
 
     return (
@@ -21,6 +21,8 @@ const TimelineItem = ({item}) => {
         >
 
             <div className="timeline-year">
+
+                <span className="timeline-dot"></span>
 
                 {item.year}
 
@@ -54,7 +56,7 @@ const TimelineItem = ({item}) => {
 
                 <div className="timeline-tech">
 
-                    {item.technologies.map((tech)=>(
+                    {item.technologies.map((tech) => (
 
                         <span key={tech}>
 

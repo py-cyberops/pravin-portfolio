@@ -16,7 +16,10 @@ const Certifications = () => {
 
     return (
 
-        <section className="certifications" >
+        <section 
+            className="certifications"
+            id="certifications"
+        >
 
             <motion.div
 
@@ -35,44 +38,72 @@ const Certifications = () => {
 
             >
 
+
                 <motion.p
+
                     className="section-label"
+
                     variants={itemVariants}
+
                 >
+
                     CERTIFICATIONS
+
                 </motion.p>
 
 
-                <motion.h2 variants={itemVariants}>
-                    Continuous learning and engineering growth.
+
+
+                <motion.h2
+
+                    variants={itemVariants}
+
+                >
+
+                    Verified learning milestones.
+
                 </motion.h2>
 
 
+
+
                 <motion.p
+
                     className="certifications-description"
+
                     variants={itemVariants}
+
                 >
+
                     Professional certifications covering software
-                    development, networking, cybersecurity, and cloud
-                    fundamentals.
+                    development, networking, cybersecurity, cloud
+                    fundamentals, and engineering practices.
+
                 </motion.p>
+
+
 
 
                 <div className="certifications-grid">
 
-                    {certifications.map((certificate)=>(
 
-                        <CertificationCard
+                    {
+                        certifications.map((certificate)=>(
 
-                            key={certificate.id}
+                            <CertificationCard
 
-                            certificate={certificate}
+                                key={certificate.id}
 
-                        />
+                                certificate={certificate}
 
-                    ))}
+                            />
+
+                        ))
+                    }
+
 
                 </div>
+
 
 
             </motion.div>
