@@ -88,7 +88,7 @@ const HeroTerminal = () => {
                         Security Focus:
 
                         <span className="active">
-                            Active
+                            ● Active
                         </span>
 
                     </motion.p>
@@ -101,11 +101,11 @@ const HeroTerminal = () => {
 
                     <motion.p variants={terminalLineVariants}>
 
-                        <span className="prompt">
-                            $
-                        </span>
+                        <span className="prompt">$</span> stack
 
-                        stack
+                        <span className="cursor">
+                            |
+                        </span>
 
                     </motion.p>
 
@@ -123,18 +123,17 @@ const HeroTerminal = () => {
 
 
                     <motion.div
-
                         className="status"
-
                         variants={terminalLineVariants}
-
                     >
 
                         <span className="status-dot">
                             ●
                         </span>
 
-                        SYSTEM ONLINE
+                        <span>
+                            SYSTEM OPERATIONAL
+                        </span>
 
                     </motion.div>
 

@@ -14,6 +14,9 @@
 
     font-family:var(--font-mono);
 
+    box-shadow:
+        0 0 40px rgba(0,212,255,0.08);
+
 }
 
 
@@ -107,11 +110,39 @@
 
 
 .status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+    color: var(--color-success);
+    font-size: 14px;
+}
+.cursor {
 
-    margin-top:24px;
+    margin-left:4px;
 
-    color:var(--color-success);
+    color:var(--color-cyan);
 
-    font-size:14px;
+    animation:blink 1s infinite;
+
+}
+
+
+@keyframes blink {
+
+    0%,
+    50% {
+
+        opacity:1;
+
+    }
+
+
+    51%,
+    100% {
+
+        opacity:0;
+
+    }
 
 }
