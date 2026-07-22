@@ -55,12 +55,12 @@ const Hero = () => {
                     variants={itemVariants}
                 >
 
-                    <Button>
+                    <Button href="#projects">
                         View Projects
                     </Button>
 
 
-                    <Button variant="secondary">
+                    <Button variant="secondary" href="contact">
                         Contact Me
                     </Button>
 
