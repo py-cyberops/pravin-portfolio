@@ -18,7 +18,7 @@ const Skills = () => {
 
     return (
 
-        <section className="skills">
+        <section className="skills" id="skills">
 
 
             <motion.div

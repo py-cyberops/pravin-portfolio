@@ -13,7 +13,7 @@ const About = () => {
 
     return (
 
-        <section className="about">
+        <section className="about" id="about">
 
 
             <motion.div

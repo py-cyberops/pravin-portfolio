@@ -16,7 +16,7 @@ const Certifications = () => {
 
     return (
 
-        <section className="certifications">
+        <section className="certifications" >
 
             <motion.div
 
