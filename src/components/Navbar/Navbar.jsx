@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { navLinks } from "../../data/navigation";
 
@@ -9,6 +9,59 @@ const Navbar = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const [activeSection, setActiveSection] = useState("home");
+
+
+
+    useEffect(() => {
+
+        const sections = document.querySelectorAll("section[id]");
+
+
+        const observer = new IntersectionObserver(
+
+            (entries) => {
+
+                entries.forEach((entry) => {
+
+                    if (entry.isIntersecting) {
+
+                        setActiveSection(entry.target.id);
+
+                    }
+
+                });
+
+            },
+
+            {
+                threshold:0.3,
+            }
+
+        );
+
+
+        sections.forEach((section) => {
+
+            observer.observe(section);
+
+        });
+
+
+        return () => {
+
+            sections.forEach((section) => {
+
+                observer.unobserve(section);
+
+            });
+
+        };
+
+
+    }, []);
+
+
 
     return (
 
@@ -16,7 +69,9 @@ const Navbar = () => {
 
 
             <div className="navbar-logo">
+
                 Pravin Gyawali
+
             </div>
 
 
@@ -24,6 +79,8 @@ const Navbar = () => {
             <button
 
                 className="menu-toggle"
+
+                aria-label="Toggle navigation menu"
 
                 onClick={() => setMenuOpen(!menuOpen)}
 
@@ -53,6 +110,12 @@ const Navbar = () => {
                             <a
 
                                 href={link.path}
+
+                                className={
+                                    activeSection === link.path.substring(1)
+                                    ? "active"
+                                    : ""
+                                }
 
                                 onClick={() => setMenuOpen(false)}
 
