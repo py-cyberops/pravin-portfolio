@@ -1,0 +1,108 @@
+.certification-card {
+
+    display:flex;
+
+    gap:24px;
+
+    padding:28px;
+
+    background:
+    var(--color-ink-soft);
+
+    border:
+    1px solid rgba(137,146,166,0.2);
+
+    border-radius:
+    var(--radius-lg);
+
+    transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+
+}
+
+
+
+.certification-card:hover {
+
+    transform:
+    translateY(-4px);
+
+    border-color:
+    var(--color-cyan);
+
+}
+
+
+
+.certificate-number {
+
+    font-family:
+    var(--font-mono);
+
+    color:
+    var(--color-cyan);
+
+}
+
+
+
+.certificate-category {
+
+    font-family:
+    var(--font-mono);
+
+    font-size:13px;
+
+    color:
+    var(--color-slate);
+
+}
+
+
+
+.certificate-content h3 {
+
+    margin:
+    12px 0 8px;
+
+    font-family:
+    var(--font-display);
+
+}
+
+
+
+.certificate-content p {
+
+    color:
+    var(--color-slate);
+
+}
+
+
+
+.certificate-year {
+
+    display:block;
+
+    margin-top:12px;
+
+    font-size:14px;
+
+}
+
+
+
+.certificate-link {
+
+    display:inline-block;
+
+    margin-top:18px;
+
+    color:
+    var(--color-cyan);
+
+    text-decoration:none;
+
+}

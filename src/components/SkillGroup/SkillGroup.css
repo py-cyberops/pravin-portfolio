@@ -1,0 +1,59 @@
+.skill-group {
+
+    background:
+    var(--color-ink-soft);
+
+    border:
+    1px solid rgba(137,146,166,0.2);
+
+    padding:
+    28px;
+
+    border-radius:
+    var(--radius-lg);
+
+}
+
+
+.skill-number {
+
+    font-family:
+    var(--font-mono);
+
+    color:
+    var(--color-cyan);
+
+    font-size:14px;
+
+}
+
+
+.skill-group h3 {
+
+    margin-top:16px;
+
+    font-family:
+    var(--font-display);
+
+}
+
+
+.skill-group ul {
+
+    list-style:none;
+
+    padding:0;
+
+    margin-top:20px;
+
+}
+
+
+.skill-group li {
+
+    color:
+    var(--color-slate);
+
+    margin-bottom:10px;
+
+}
