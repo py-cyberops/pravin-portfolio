@@ -1,6 +1,14 @@
 import "./Hero.css";
 
+import { motion } from "motion/react";
+
 import Button from "../../components/Button/Button";
+
+import {
+    containerVariants,
+    itemVariants,
+    visualVariants,
+} from "../../animations/variants";
 
 
 const Hero = () => {
@@ -9,27 +17,41 @@ const Hero = () => {
 
         <section className="hero">
 
+            <motion.div
+                className="hero-content"
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+            >
 
-            <div className="hero-content">
-
-                <p className="hero-tag">
+                <motion.p
+                    className="hero-role"
+                    variants={itemVariants}
+                >
                     Security-Focused Full Stack Developer
-                </p>
+                </motion.p>
 
 
-                <h1>
+                <motion.h1
+                    variants={itemVariants}
+                >
                     Pravin Gyawali
-                </h1>
+                </motion.h1>
 
 
-                <p className="hero-description">
-                    I build modern software systems
-                    designed with performance,
-                    scalability and security in mind.
-                </p>
+                <motion.p
+                    className="hero-description"
+                    variants={itemVariants}
+                >
+                    I build modern software systems designed with
+                    performance, scalability and security in mind.
+                </motion.p>
 
 
-                <div className="hero-actions">
+                <motion.div
+                    className="hero-actions"
+                    variants={itemVariants}
+                >
 
                     <Button>
                         View Projects
@@ -40,13 +62,24 @@ const Hero = () => {
                         Contact Me
                     </Button>
 
-                </div>
-
-            </div>
+                </motion.div>
 
 
+            </motion.div>
 
-            <div className="hero-visual">
+
+
+            <motion.div
+
+                className="hero-visual"
+
+                variants={visualVariants}
+
+                initial="hidden"
+
+                animate="visible"
+
+            >
 
                 <div className="visual-card">
 
@@ -54,14 +87,14 @@ const Hero = () => {
 
                 </div>
 
-            </div>
+            </motion.div>
 
 
         </section>
 
-    )
+    );
 
-}
+};
 
 
 export default Hero;
