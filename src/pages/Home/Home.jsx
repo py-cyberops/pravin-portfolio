@@ -1,6 +1,8 @@
 import "./Home.css";
 
 import Hero from "../../sections/Hero/Hero";
+import About from "../../sections/About/About";
+import Projects from "../../sections/Projects/Projects";
 
 
 const Home = () => {
@@ -10,7 +12,8 @@ const Home = () => {
         <main>
 
             <Hero />
-
+            <About />
+            <Projects />
         </main>
 
     )
