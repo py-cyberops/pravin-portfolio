@@ -3,8 +3,27 @@ import "./Button.css";
 
 const Button = ({
     children,
-    variant = "primary"
+    variant = "primary",
+    href
 }) => {
+
+    if (href) {
+
+        return (
+
+            <a
+                href={href}
+                className={`button button-${variant}`}
+            >
+
+                {children}
+
+            </a>
+
+        );
+
+    }
+
 
     return (
 
@@ -14,9 +33,9 @@ const Button = ({
 
         </button>
 
-    )
+    );
 
-}
+};
 
 
 export default Button;
