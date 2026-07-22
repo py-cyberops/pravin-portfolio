@@ -4,6 +4,8 @@ import { motion } from "motion/react";
 
 import Button from "../../components/Button/Button";
 
+import HeroTerminal from "../../components/HeroTerminal/HeroTerminal";
+
 import {
     containerVariants,
     itemVariants,
@@ -81,11 +83,7 @@ const Hero = () => {
 
             >
 
-                <div className="visual-card">
-
-                    &lt;/&gt;
-
-                </div>
+                <HeroTerminal />
 
             </motion.div>
 
