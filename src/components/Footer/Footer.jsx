@@ -42,7 +42,7 @@ const Footer = () => {
                 </p>
 
 
-
+                <a href="https://nivaronix.com/?utm_source=badge" target="_blank" rel="noopener"><Image src="https://nivaronix.com/badge/oQ1bxu6qmWRYQ3wSv3WoGw.svg?theme=dark" alt="Monitored by Nivaronix" height="44" width="auto" loading="lazy" decoding="async"/></a>
 
                 <p className="footer-stack">
 
